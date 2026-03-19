@@ -9,7 +9,7 @@ export function Footer() {
           {/* About */}
           <div>
             <img
-              src="/Lashawn_Logo-removebg-preview.png"
+              src="https://res.cloudinary.com/dgfmhyebp/image/upload/v1773227181/Logo_kwrpld.png"
               alt="Lashawn Driving & Computer College"
               className="h-14 w-auto object-contain mb-4 brightness-0 invert" />
             

@@ -12,7 +12,7 @@ export function Header() {
         <div className="flex items-center justify-between py-2">
           <Link to="/" className="flex items-center">
             <img
-              src="/Lashawn_Logo-removebg-preview.png"
+              src="https://res.cloudinary.com/dgfmhyebp/image/upload/v1773227181/Logo_kwrpld.png"
               alt="Lashawn Driving & Computer College"
               className="h-16 w-auto object-contain" />
             
