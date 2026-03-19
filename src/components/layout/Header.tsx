@@ -27,11 +27,20 @@ export function Header() {
                   className="text-gray-700 hover:text-[#2E8B57] transition-colors">
                   
                   Home
-                {/* Student Portal link removed */}
+          
+                  
+                </Link>
+              </li>
+
+              <li>
+                <Link
+                  to="/driving-courses"
+                  className="text-gray-700 hover:text-[#2E8B57] transition-colors">
                   
                   Driving
                 </Link>
               </li>
+
               <li>
                 <Link
                   to="/computer-courses"
@@ -95,13 +104,6 @@ export function Header() {
                   title="Admin Portal">
                   
                   Admin
-                </Link>
-                <Link
-                  to="/student/login"
-                  className="text-[#2E8B57] hover:text-[#1e6b41] transition-colors"
-                  title="Student Portal">
-                  
-                  Portal
                 </Link>
               </li>
             </ul>
