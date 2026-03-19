@@ -1,0 +1,34 @@
+/* PLEASE NOTE: THESE TAILWIND IMPORTS SHOULD NEVER BE DELETED */
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+/* DO NOT DELETE THESE TAILWIND IMPORTS, OTHERWISE THE STYLING WILL NOT RENDER AT ALL */
+
+/* Print styles - only show the printable exam form area */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer base {
+  body {
+    @apply text-gray-900 bg-gray-50;
+  }
+}
+@media print {
+  body {
+    background-color: white !important;
+  }
+  /* Hide everything except the modal when printing */
+  body.modal-open > *:not(.fixed) {
+    display: none !important;
+  }
+  .print-exam-form {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  @page {
+    margin: 1cm;
+  }
+}
