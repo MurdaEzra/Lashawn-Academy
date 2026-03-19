@@ -28,7 +28,7 @@ export function AdminLogin() {
       setRegisterError('Passwords do not match.');
       return;
     }
-    fetch('http://localhost:3001/admin-register', {
+    fetch('https://lashawn-academy-backend.onrender.com/admin-register', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ email: registerEmail, password: registerPassword })
@@ -53,7 +53,7 @@ export function AdminLogin() {
     setIsLoading(true);
     setError('');
     try {
-      const response = await fetch('http://localhost:3001/admin-login', {
+      const response = await fetch('https://lashawn-academy-backend.onrender.com/admin-login', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ email, password })
@@ -156,20 +156,7 @@ export function AdminLogin() {
             Secure portal for managing student records, registrations, fee
             structures, and institutional operations.
           </p>
-          <div className="space-y-4">
-            <div className="flex items-center text-gray-300">
-              <div className="w-10 h-10 rounded-lg bg-[#2E8B57]/20 flex items-center justify-center mr-4">
-                <ShieldCheck className="h-5 w-5 text-[#2E8B57]" />
-              </div>
-              <span className="text-sm">256-bit encrypted secure access</span>
-            </div>
-            <div className="flex items-center text-gray-300">
-              <div className="w-10 h-10 rounded-lg bg-[#2E8B57]/20 flex items-center justify-center mr-4">
-                <Lock className="h-5 w-5 text-[#2E8B57]" />
-              </div>
-              <span className="text-sm">Role-based access control</span>
-            </div>
-          </div>
+          
           <div className="mt-16 pt-8 border-t border-gray-800">
             <p className="text-xs text-gray-500">
               © {new Date().getFullYear()} Lashawn Driving & Computer College
@@ -226,7 +213,7 @@ export function AdminLogin() {
                   onChange={(e) => setEmail(e.target.value)}
                   required
                   className="block w-full pl-12 pr-4 py-3 bg-white border border-gray-200 rounded-xl focus:ring-2 focus:ring-[#2E8B57]/20 focus:border-[#2E8B57] outline-none transition-all text-gray-900"
-                  placeholder="admin@lashawn.co.ke" />
+                  placeholder="Enter email" />
                 
               </div>
             </div>
